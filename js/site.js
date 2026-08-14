@@ -5,7 +5,7 @@
   header.innerHTML = `
     <div class="site-header-inner">
       <a class="brand" href="./">
-        <span>solSwimmer</span>
+        <span>Sol Swimming</span>
         Tap Agent
       </a>
       <nav>
@@ -22,6 +22,6 @@
 
   const footer = document.createElement("footer");
   footer.className = "site-footer";
-  footer.textContent = "Tap Agent documentation · solSwimmer";
+  footer.textContent = "Tap Agent documentation · Sol Swimming";
   document.body.append(footer);
 })();
