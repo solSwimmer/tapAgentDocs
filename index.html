@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tap Agent Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Tap Agent by solSwimmer." />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --ink: #e8eaed;
+      --muted: #9aa0a8;
+      --line: #2a2e35;
+      --cyan: #3ee0ff;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 17px/1.55 "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 56px 24px 96px;
+    }
+    h1 { font-size: 2rem; letter-spacing: -0.03em; margin: 12px 0 8px; }
+    h2 { font-size: 1.2rem; margin: 2.1em 0 0.6em; }
+    p, li { color: #d5d8dd; }
+    .muted { color: var(--muted); }
+    a { color: var(--cyan); }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+    .kicker {
+      color: var(--cyan);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    ul { padding-left: 1.2em; }
+    li { margin: 0.35em 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="kicker">solSwimmer</div>
+      <h1>Tap Agent Privacy Policy</h1>
+      <p class="muted">Effective date: August 14, 2026</p>
+    </header>
+
+    <p>
+      This policy describes how <strong>solSwimmer</strong> (“we”) handles information in
+      the Android app <strong>Tap Agent</strong> (package
+      <code>com.solswimmer.tapagent</code>).
+    </p>
+    <p>
+      Tap Agent lets you create touch maps and dispatch programmatic tap events to other
+      apps, using an optional on-screen control panel.
+    </p>
+
+    <h2>Short version</h2>
+    <p>
+      Tap Agent does <strong>not</strong> create an account, does <strong>not</strong>
+      require the internet, and does <strong>not</strong> send your data to us.
+      Touch maps and settings stay on your device. The accessibility service is used
+      only to send tap gestures — it does not read screen content or take screenshots.
+    </p>
+
+    <h2>Information we collect</h2>
+    <p>We do not collect, transmit, or sell personal information through the app.</p>
+    <p>We do not use analytics SDKs, advertising SDKs, crash-reporting SDKs, or accounts.</p>
+
+    <h2>Information stored on your device</h2>
+    <p>The app stores the following <strong>locally</strong> in app private storage:</p>
+    <ul>
+      <li>Touch maps you create (names, coordinates, timing, and related settings), as JSON files</li>
+      <li>Which map is selected and whether the service was left enabled</li>
+    </ul>
+    <p>
+      This data is used only to run the features you configure. It is not uploaded to
+      solSwimmer.
+    </p>
+    <p>
+      If Android Backup is enabled on your device, Android may include this local app
+      data in <em>your</em> device backup (for example to Google Drive). That backup is
+      controlled by your Google / device settings, not by a solSwimmer server.
+    </p>
+
+    <h2>Permissions and sensitive capabilities</h2>
+    <p>Tap Agent requests only what it needs to work:</p>
+    <ul>
+      <li>
+        <strong>Accessibility service.</strong>
+        Used solely to dispatch tap gestures you start
+        (<code>dispatchGesture</code>).
+        Window content is not retrieved. Screenshots are not taken.
+        The service does not read text, view hierarchy, or other apps’ content.
+        You can turn it off any time in Android Settings → Accessibility.
+      </li>
+      <li>
+        <strong>Display over other apps.</strong>
+        Used to show the floating control panel, touch-area markers, and optional overlay
+        while the service is running. The app does not use this permission to capture
+        what is on the screen.
+      </li>
+      <li>
+        <strong>Notifications.</strong>
+        Used for the foreground-service status notification while Tap Agent is running.
+      </li>
+      <li>
+        <strong>Run at startup.</strong>
+        If you left the service enabled, the app may restart in standby after a reboot.
+        Automation does not resume until you start a map.
+      </li>
+      <li>
+        <strong>Foreground service / keep awake.</strong>
+        Used so the control panel and event dispatch can continue while you use other apps.
+      </li>
+    </ul>
+
+    <h2>Information we do not access</h2>
+    <ul>
+      <li>Contacts, photos, files outside the app, location, microphone, or camera</li>
+      <li>Screen contents, screenshots, or other apps’ text or UI trees</li>
+      <li>Your Google account or payment information inside the app (none are collected by us today)</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>
+      We do not share app data with third parties because we do not receive it.
+      If you install Tap Agent from Google Play, Google may process install and device
+      information under
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+      That is Google’s processing, not ours.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Tap Agent is not directed at children under 13, and we do not knowingly collect
+      personal information from children.
+    </p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Delete individual touch maps in the app</li>
+      <li>Turn off the accessibility service or overlay permission in system Settings</li>
+      <li>Uninstall the app to delete local maps and settings from the device</li>
+    </ul>
+    <p>
+      Because we do not hold a copy of your data, we cannot remotely export or erase
+      device-local maps. Uninstall or in-app delete is the way to remove them.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If we add features that change this policy — for example advertising or an
+      optional paid “remove ads” purchase processed by Google Play — we will update
+      this page and the effective date. Continued use after an update means you accept
+      the revised policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions about this policy or Tap Agent:<br />
+      <a href="mailto:banksmw15@gmail.com">banksmw15@gmail.com</a><br />
+      Publisher: solSwimmer
+    </p>
+  </main>
+</body>
+</html>
