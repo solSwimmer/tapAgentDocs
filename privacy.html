@@ -25,134 +25,196 @@
 
     <h2>Short version</h2>
     <p>
-      Tap Agent does <strong>not</strong> create an account. Touch maps and settings stay
-      on your device and are not uploaded to solSwimmer. The accessibility service is used
-      only to send tap gestures — it does not read screen content or take screenshots.
+      Tap Agent does not create an account. Touch maps and settings are stored in the
+      app’s private storage on your device. solSwimmer does not operate a server that
+      receives those maps.
     </p>
     <p>
-      The free app shows ads through <strong>Google AdMob</strong> (Google’s advertising
-      platform). Google may collect device and advertising identifiers to serve and
-      measure those ads. solSwimmer does not receive your touch maps or a personal profile
-      from that process.
+      The accessibility service is used only to dispatch tap gestures you start. It is
+      not configured to read screen content, take screenshots, or observe other apps’
+      user input.
+    </p>
+    <p>
+      The ad-supported app uses <strong>Google AdMob</strong> to show ads. Google — not
+      solSwimmer — operates that advertising service. What Google and its partners
+      process can vary by region, consent choices, and AdMob configuration. See
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
     </p>
 
-    <h2>Information we collect</h2>
+    <h2>Who this app is for</h2>
     <p>
-      solSwimmer does not operate an account system and does not receive your touch maps
-      or a name, email, or payment card through the app itself.
+      Tap Agent is intended for adult users of Android automation tools. It is not
+      designed for children, is not a children’s app, and we do not treat children
+      under 13 as an audience. This should match the target-audience setting in
+      Google Play Console (ages 13+ or 18+, not younger).
     </p>
     <p>
-      We do not use a separate analytics or crash-reporting SDK. We <strong>do</strong>
-      use the <strong>Google Mobile Ads (AdMob) SDK</strong> to show ads.
+      We do not knowingly collect personal information from children under 13. If you
+      believe a child has provided personal information to us, contact
+      <a href="mailto:solSwimmer1820@proton.me">solSwimmer1820@proton.me</a> and we will
+      delete anything we actually hold (today, that would not include touch maps,
+      because we do not receive them).
+    </p>
+
+    <h2>What solSwimmer receives</h2>
+    <p>
+      solSwimmer does not operate user accounts and does not receive your touch maps,
+      name, email, or payment card through the app.
+    </p>
+    <p>
+      We do not embed a separate analytics or crash-reporting library (for example
+      Firebase Analytics or Crashlytics). If you install Tap Agent from Google Play,
+      Google may still receive crashes and performance data through
+      <strong>Android vitals</strong> as part of Play, under
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+      solSwimmer may see aggregated or de-identified vitals in Play Console; that is
+      Google’s collection, not an SDK we added.
     </p>
 
     <h2>Information stored on your device</h2>
-    <p>The app stores the following <strong>locally</strong> in app private storage:</p>
+    <p>The app stores the following <strong>locally</strong> in app-private storage:</p>
     <ul>
       <li>Touch maps you create (names, coordinates, timing, and related settings), as JSON files</li>
       <li>Which map is selected and whether the service was left enabled</li>
     </ul>
     <p>
-      This data is used only to run the features you configure. It is not uploaded to
-      solSwimmer.
+      This data is used only to run the features you configure. The Tap Agent
+      application does not transmit touch-map contents to solSwimmer or to advertising
+      providers.
+    </p>
+
+    <h2>Android Backup</h2>
+    <p>
+      The app allows Android Auto Backup (<code>android:allowBackup="true"</code>).
+      If Backup is enabled in your device / Google account settings, Android may
+      include this local app data in <em>your</em> cloud or device-to-device backup
+      (for example Google Drive).
     </p>
     <p>
-      If Android Backup is enabled on your device, Android may include this local app
-      data in <em>your</em> device backup (for example to Google Drive). That backup is
-      controlled by your Google / device settings, not by a solSwimmer server.
+      That is a backup of <em>your</em> device, operated by Google or the device maker.
+      solSwimmer does not control those backups, does not receive a copy of them, and
+      cannot read or delete them. Turn off Android Backup or uninstall the app if you
+      do not want maps included in a backup you control.
     </p>
 
     <h2>Advertising (Google AdMob)</h2>
     <p>
-      Tap Agent uses <a href="https://admob.google.com/">Google AdMob</a> to display ads.
-      When ads are requested or shown, Google and its advertising partners may process
-      information such as:
+      The ad-supported version of Tap Agent uses the
+      <a href="https://admob.google.com/">Google Mobile Ads (AdMob)</a> SDK to request
+      and display ads. solSwimmer does not receive a personal advertising profile from
+      Google as part of showing those ads. Touch maps are not sent to AdMob by the
+      Tap Agent application.
+    </p>
+    <p>
+      Independently of solSwimmer, Google and participating advertising partners
+      <em>may</em> process advertising-related data when an ad is requested or shown.
+      What is processed is <strong>not an exhaustive list</strong> and can depend on
+      SDK version, ad format, your region, consent or other privacy choices, and
+      Google’s then-current configuration. It <em>may include</em>, for example:
     </p>
     <ul>
-      <li>Advertising ID (Google Advertising ID) and other device identifiers</li>
-      <li>IP address and approximate location derived from it</li>
-      <li>Device and app data (model, OS version, app version)</li>
-      <li>Ad views, clicks, and whether an ad request succeeded</li>
+      <li>Advertising ID and other device or app identifiers</li>
+      <li>IP address and approximate location derived from network information</li>
+      <li>Device and app metadata (such as model, OS version, app version)</li>
+      <li>Ad serving and interaction signals (such as requests, impressions, and clicks)</li>
     </ul>
     <p>
-      That processing is done by Google under
-      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>
+      Google describes that processing in
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>,
+      <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use our services</a>,
       and
-      <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use our services</a>.
-      How partners use data is also described in
-      <a href="https://support.google.com/admob/answer/9012903">AdMob’s advertising partner guidance</a>.
+      <a href="https://support.google.com/admob/answer/9012903">AdMob advertising partner information</a>.
     </p>
     <p>
-      In the European Economic Area, UK, and similar regions we use Google’s
-      <strong>User Messaging Platform</strong> to ask for consent (or legitimate-interest
-      choices) before personalized ads. You can also reset or opt out of personalized ads
-      in Android Settings → Google → Ads (wording varies by device).
+      Where required by applicable law or by Google’s advertising requirements, the
+      app presents Google’s <strong>User Messaging Platform</strong> so you can make
+      ad choices. Whether ads are personalized, limited, or not shown can depend on
+      those choices and on Google’s systems. You can also reset or opt out of
+      personalized ads in Android Settings → Google → Ads (labels vary by device).
     </p>
     <p>
-      If we later offer a paid option to remove ads, that purchase would be processed by
-      Google Play, not by solSwimmer directly. We would still need the network only if ads
-      remain in the free version you are using.
+      If we later offer a paid option to remove ads, that purchase would be processed
+      by Google Play, not by solSwimmer collecting card details.
     </p>
 
-    <h2>Permissions and sensitive capabilities</h2>
-    <p>Tap Agent requests only what it needs to work:</p>
+    <h2>Permissions and capabilities</h2>
+    <p>
+      These match the current Android manifest and accessibility configuration.
+      Human names first; system names in parentheses.
+    </p>
     <ul>
       <li>
-        <strong>Accessibility service.</strong>
+        <strong>Accessibility service</strong>
+        (<code>BIND_ACCESSIBILITY_SERVICE</code>;
+        <code>canPerformGestures="true"</code>;
+        <code>canRetrieveWindowContent="false"</code>;
+        <code>canTakeScreenshot="false"</code>).
         Used solely to dispatch tap gestures you start
         (<code>dispatchGesture</code>).
-        Window content is not retrieved. Screenshots are not taken.
-        The service does not read text, view hierarchy, or other apps’ content.
-        You can turn it off any time in Android Settings → Accessibility.
+        The service is not configured to retrieve window content or take screenshots.
+        It does not record or transmit other apps’ user gestures, text, or UI trees.
+        Coordinates you save in a touch map are stored only in local app files.
+        You can turn the service off in Android Settings → Accessibility.
       </li>
       <li>
-        <strong>Display over other apps.</strong>
-        Used to show the floating control panel, touch-area markers, and optional overlay
-        while the service is running. The app does not use this permission to capture
-        what is on the screen.
+        <strong>Display over other apps</strong>
+        (<code>SYSTEM_ALERT_WINDOW</code>).
+        Used to show the floating control panel, touch-area markers, and optional
+        overlay. Not used to capture what is on the screen.
       </li>
       <li>
-        <strong>Notifications.</strong>
-        Used for the foreground-service status notification while Tap Agent is running.
+        <strong>Notifications</strong>
+        (<code>POST_NOTIFICATIONS</code>).
+        Used for the foreground-service status notification.
       </li>
       <li>
-        <strong>Run at startup.</strong>
-        If you left the service enabled, the app may restart in standby after a reboot.
+        <strong>Restart after reboot</strong>
+        (<code>RECEIVE_BOOT_COMPLETED</code>).
+        This is not an overlay or accessibility permission. If you left the service
+        enabled, a boot receiver may start Tap Agent in standby after reboot.
         Automation does not resume until you start a map.
       </li>
       <li>
-        <strong>Foreground service / keep awake.</strong>
+        <strong>Foreground service</strong>
+        (<code>FOREGROUND_SERVICE</code>,
+        <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)
+        and <strong>keep awake</strong> (<code>WAKE_LOCK</code>).
         Used so the control panel and event dispatch can continue while you use other apps.
       </li>
       <li>
-        <strong>Internet and network state.</strong>
-        Used to request and display ads from Google. Not used to upload your touch maps.
+        <strong>Internet</strong>
+        (<code>INTERNET</code>, and if present
+        <code>ACCESS_NETWORK_STATE</code>).
+        Used to request and display ads from Google when the ad-supported build
+        includes AdMob. Not used by Tap Agent to upload touch maps.
       </li>
     </ul>
 
     <h2>Information we do not access</h2>
     <ul>
-      <li>Contacts, photos, files outside the app, location, microphone, or camera</li>
+      <li>Contacts, photos, files outside the app, precise location, microphone, or camera</li>
       <li>Screen contents, screenshots, or other apps’ text or UI trees</li>
-      <li>Your Google account or payment information inside the app (none are collected by us today)</li>
+      <li>Other apps’ live touch or gesture input</li>
+      <li>Your Google account password or payment card numbers inside Tap Agent</li>
     </ul>
 
     <h2>Sharing</h2>
     <p>
-      solSwimmer does not sell your information and does not share your touch maps with
-      anyone. Maps never leave the device through our code.
+      solSwimmer does not sell your information and does not share your touch maps
+      with third parties. The Tap Agent application does not transmit touch-map
+      contents to solSwimmer or to advertising providers.
     </p>
     <p>
-      Advertising data is processed by <strong>Google</strong> (AdMob) and, depending on
-      your consent choices, Google’s advertising partners. If you install Tap Agent from
-      Google Play, Google may also process install and device information under
+      Advertising-related data may be processed by <strong>Google</strong> (AdMob)
+      and, depending on your privacy choices and Google’s configuration, by Google’s
+      advertising partners. If you install from Google Play, Google may also process
+      install, device, and vitals information under
       <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
     </p>
-
-    <h2>Children</h2>
     <p>
-      Tap Agent is not directed at children under 13, and we do not knowingly collect
-      personal information from children.
+      For Google Play’s Data safety form, “collection” and “sharing” include what
+      SDKs in the app do — not only what solSwimmer’s servers receive. AdMob
+      declarations should follow Google’s then-current AdMob / Data safety guidance.
     </p>
 
     <h2>Your choices</h2>
@@ -160,12 +222,12 @@
       <li>Delete individual touch maps in the app</li>
       <li>Turn off the accessibility service or overlay permission in system Settings</li>
       <li>Uninstall the app to delete local maps and settings from the device</li>
-      <li>Limit or reset advertising ID / opt out of personalized ads in Android Google Ads settings</li>
-      <li>In supported regions, change ad consent through the in-app consent form (or reinstall to see it again)</li>
+      <li>Limit or reset your advertising ID, or opt out of personalized ads, in Android Google Ads settings</li>
+      <li>Where a consent form is shown, use it to change ad choices</li>
     </ul>
     <p>
-      Because we do not hold a copy of your data, we cannot remotely export or erase
-      device-local maps. Uninstall or in-app delete is the way to remove them.
+      Because solSwimmer does not hold a copy of your maps, we cannot remotely export
+      or erase device-local maps. Uninstall or in-app delete is the way to remove them.
     </p>
 
     <h2>Changes</h2>
