@@ -1,0 +1,128 @@
+:root {
+  --bg: #0b0d10;
+  --panel: #14161a;
+  --ink: #e8eaed;
+  --muted: #9aa0a8;
+  --line: #2a2e35;
+  --cyan: #3ee0ff;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.55 "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+}
+
+a { color: var(--cyan); }
+code { font-size: 0.92em; }
+
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: #0b0d10ee;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.site-header-inner,
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 56px;
+}
+
+.brand {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.brand span {
+  color: var(--cyan);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: var(--cyan);
+}
+
+main { padding: 40px 24px 96px; }
+
+h1 { font-size: 2rem; letter-spacing: -0.03em; margin: 8px 0; }
+h2 { font-size: 1.2rem; margin: 2.1em 0 0.6em; }
+p, li { color: #d5d8dd; }
+.muted { color: var(--muted); }
+
+.page-kicker {
+  color: var(--cyan);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ul { padding-left: 1.2em; }
+li { margin: 0.35em 0; }
+
+.doc-list {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+}
+
+.doc-list li { margin: 0 0 12px; }
+
+.doc-list a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+
+.doc-list a:hover { border-color: var(--cyan); }
+
+.doc-list strong {
+  display: block;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.doc-list span { color: var(--muted); font-size: 15px; }
+
+.site-footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
